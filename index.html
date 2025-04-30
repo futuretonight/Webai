@@ -7,23 +7,23 @@
     <meta name="description" content="An immersive portfolio showcasing my work and tools">
     
     <!-- Preload critical resources -->
-    <link rel="preload" href="css/preloader.css" as="style">
-    <link rel="preload" href="js/preloader.js" as="script">
+    <link rel="preload" href="preloader.css" as="style">
+    <link rel="preload" href="preloader.js" as="script">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" as="script">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" as="script">
     
     <!-- Favicon -->
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/preloader.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="stylesheet" href="main.css">
     
     <!-- Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/js/service-worker.js')
+                navigator.serviceWorker.register('service-worker.js')
                     .then(registration => {
                         console.log('ServiceWorker registration successful');
                     })
@@ -118,8 +118,8 @@
     <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     
     <!-- Main Scripts -->
-    <script src="js/preloader.js"></script>
-    <script src="js/gsap-animations.js"></script>
-    <script src="js/main.js"></script>
+    <script src="preloader.js"></script>
+    <script src="gsap-animations.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

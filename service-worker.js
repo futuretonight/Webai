@@ -2,13 +2,12 @@ const CACHE_NAME = 'portfolio-cache-v1';
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',
-    '/css/main.css',
-    '/css/preloader.css',
-    '/js/main.js',
-    '/js/preloader.js',
-    '/js/gsap-animations.js',
-    '/assets/images/profile.jpg',
-    // Add other critical assets here
+    '/main.css',
+    '/preloader.css',
+    '/main.js',
+    '/preloader.js',
+    '/gsap-animations.js',
+    // Add other assets here
 ];
 
 self.addEventListener('install', (event) => {
